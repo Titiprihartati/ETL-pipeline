@@ -1,0 +1,23 @@
+1. Pastikan semua skrip pengujian sudah diupload ke Google Colab, termasuk:
+
+> tests/test_extract.py
+
+> tests/test_transform.py
+
+> tests/test_load.py
+
+2. Untuk menjalankan unit test menggunakan unittest, jalankan perintah berikut di Google Colab:
+
+!python3 -m unittest discover -s tests
+
+3. Perintah ini akan mencari semua file dengan awalan test_ di dalam folder tests/ dan menjalankan unit test yang ada.
+
+4. Jika Anda ingin menjalankan file test secara spesifik, misalnya test_extract.py, jalankan:
+> !python3 tests/test_extract.py
+> !python3 tests/test_transform.py
+> !python3 tests/test_load.py
+
+5. Cara Menjalankan Coverage 
+!pip install pytest coverage
+!coverage run -m unittest discover -s tests
+!coverage report
